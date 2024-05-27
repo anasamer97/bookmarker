@@ -1,5 +1,5 @@
 # Website that lets you add bookmarks and save them for later.
-## Technlogies used:
+Technlogies used:
 -HTML
 -CSS Bootstrap
 -JavaScript CRUD
