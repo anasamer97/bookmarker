@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <section class="heading">
+            <h1 class="text-center display-2 mt-5">Bookmarker</h1>
+            <hr class="border border-black border-2 opacity-100 ">
+
+            <h4 class="text-center w-50 mx-auto"><i class="fa fa-bookmark"></i> Bookmark your favorite sites! <i
+                    class="fa fa-bookmark"></i>
+            </h4>
+        </section>
+
+        <section class="bookmark-input-fields mt-4">
+            <h6><i class="fa fa-book-bookmark"></i> Site Name</h6>
+            <input oninput="isValidBookmarkName()" class="w-100 form-control" id="bookmarkName" type="text"
+                placeholder="Bookmark Name">
+            <p class="text-muted mt-1">Bookmark name has to be from 3 to 10 characters. <i
+                    class="fa-solid fa-circle-exclamation"></i></p>
+            <h6 class="mt-4"><i class="fa fa-link"></i> Site URL</h6>
+            <input oninput="isValidURL()" class="w-100 form-control" id="websiteURL" type="text"
+                placeholder="Website URL">
+
+            <p class="text-muted mt-1">URL has to start with www. or begin with site name and ends with .com <i
+                    class="fa-solid fa-circle-exclamation"></i></p>
+            <button onclick="addBookmark()" id="submitButton" class="btn btn-danger px-4 ">Submit</button>
+        </section>
+        <hr class="border border-black border-2 opacity-100 mt-4">
+        <section class="displayed-data my-4">
+            <table class="table text-center ">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookmarksData">
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

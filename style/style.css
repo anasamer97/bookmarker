@@ -1,0 +1,31 @@
+body {
+    background-color: #FFF2D7;
+}
+
+.heading h1 {
+    font-family: "Cedarville Cursive", cursive;
+    position: relative;
+}
+
+.heading h4 {
+    font-family: "Cedarville Cursive", cursive;
+    background-image: linear-gradient(to right, #000, #D8AE7E);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.heading h1::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #D8AE7E;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.heading h1:hover:after {
+    background-color: #000;
+}
