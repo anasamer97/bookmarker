@@ -13,3 +13,4 @@ My DEMO: ||  https://anasamer97.github.io/Bookmarker/
 - JavaScript CRUD
 - FontAwsome
 - Google Fonts
+- Regex for input validaiton
